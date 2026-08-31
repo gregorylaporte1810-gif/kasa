@@ -21,7 +21,7 @@
     inset: 0;
 
     background-color: #000000;
-    opacity: 0.6;
+    opacity: var(--overlay-opacity);
   }
 
   &__title {
