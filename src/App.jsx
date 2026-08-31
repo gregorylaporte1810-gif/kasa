@@ -1,10 +1,7 @@
+import AppRouter from "./router/AppRouter.jsx";
+
 function App() {
-  return (
-    <main>
-      <h1>Kasa</h1>
-      <p>Application de location immobilière</p>
-    </main>
-  );
+  return <AppRouter />;
 }
 
 export default App;
