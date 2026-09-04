@@ -1,8 +1,25 @@
+import { useParams } from "react-router-dom";
+
+import Slideshow from "../../components/Slideshow/Slideshow.jsx";
+import logements from "../../data/logements.json";
+
+import "./Housing.scss";
+
 function Housing() {
+  const { id } = useParams();
+
+  const logement = logements.find(
+    (logement) => logement.id === id
+  );
+
+  if (!logement) {
+    return null;
+  }
+
   return (
-    <main>
-      <h1>Fiche logement</h1>
-    </main>
+    <section className="housing">
+      <Slideshow pictures={logement.pictures} />
+    </section>
   );
 }
 
