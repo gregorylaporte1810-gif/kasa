@@ -1,17 +1,24 @@
 .header {
-  width: 100%;
+  width: calc(100% - 200px);
   max-width: 1240px;
-  height: 68px;
 
-  margin: 45px auto 0;
+  margin: 0 auto;
+  padding: 45px 0 50px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
+  box-sizing: border-box;
+
   &__logo {
-    width: 210.32px;
+    display: block;
+
+    width: 210px;
     height: 68px;
+
+    object-fit: contain;
+    flex-shrink: 0;
   }
 
   &__nav {
@@ -21,13 +28,62 @@
   }
 
   &__link {
-    color: #000000;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 500;
+    line-height: 143%;
+
+    color: #000000;
     text-decoration: none;
 
-    &.active {
+    &:visited {
+      color: #000000;
+    }
+
+    &[aria-current="page"] {
       text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    &:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+  .header {
+    width: 100%;
+    max-width: none;
+
+    margin: 0;
+    padding: 20px;
+
+    &__logo {
+      width: 145px;
+      height: 46.88px;
+
+      flex-shrink: 0;
+    }
+
+    &__nav {
+      gap: 20px;
+      white-space: nowrap;
+    }
+
+    &__link {
+      font-size: 12px;
+      font-weight: 500;
+
+      text-transform: uppercase;
+
+      &[aria-current="page"] {
+        text-underline-offset: 2px;
+      }
     }
   }
 }

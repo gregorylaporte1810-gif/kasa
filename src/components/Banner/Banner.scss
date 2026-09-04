@@ -39,3 +39,28 @@
     text-align: center;
   }
 }
+
+@media (max-width: 767px) {
+  .banner {
+    height: 111px;
+    min-height: 111px;
+    max-height: 111px;
+
+    border-radius: 10px;
+    padding: 0 16px;
+
+    box-sizing: border-box;
+  }
+
+  .banner__title {
+    width: 225px;
+
+    margin: 0;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 100%;
+
+    text-align: left;
+  }
+}

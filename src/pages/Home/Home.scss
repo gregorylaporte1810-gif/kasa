@@ -12,5 +12,35 @@
     grid-template-columns: repeat(3, 340px);
     column-gap: 60px;
     row-gap: 50px;
+
+    box-sizing: border-box;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 767px) {
+  .home {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    &__gallery {
+      width: 100%;
+
+      margin-top: 22px;
+      padding: 0;
+
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      background: transparent;
+      border-radius: 0;
+
+      box-sizing: border-box;
+    }
   }
 }

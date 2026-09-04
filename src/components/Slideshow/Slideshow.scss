@@ -24,7 +24,10 @@
 
     padding: 0;
     border: none;
+    outline: none;
+
     background: transparent;
+    appearance: none;
 
     transform: translateY(-50%);
     cursor: pointer;
@@ -61,5 +64,29 @@
 
     color: #ffffff;
     text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .slideshow {
+    height: 255px;
+    border-radius: 10px;
+
+    &__arrow {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__arrow--left {
+      left: 6px;
+    }
+
+    &__arrow--right {
+      right: 6px;
+    }
+
+    &__counter {
+      display: none;
+    }
   }
 }

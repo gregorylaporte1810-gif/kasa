@@ -8,7 +8,7 @@ import "./Home.scss";
 
 function Home() {
   return (
-    <>
+    <main className="home">
       <Banner
         image={bannerHome}
         title="Chez vous, partout et ailleurs"
@@ -24,7 +24,7 @@ function Home() {
           />
         ))}
       </section>
-    </>
+    </main>
   );
 }
 

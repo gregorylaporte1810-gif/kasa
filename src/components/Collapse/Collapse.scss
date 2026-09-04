@@ -55,11 +55,13 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 143%;
-  }
 
-  &__content-inner p {
-    margin: 0;
-    padding: 20px;
+    color: #ff6060;
+
+    p {
+      margin: 0;
+      padding: 20px;
+    }
   }
 
   &--open {
@@ -71,19 +73,4 @@
       grid-template-rows: 1fr;
     }
   }
-}
-
-.collapse__content-inner {
-  min-height: 0;
-
-  font-family: "Montserrat", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 143%;
-  color: #ff6060;
-}
-
-.collapse__content-inner p {
-  margin: 0;
-  padding: 20px;
 }
