@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/Banner.jsx";
 import Card from "../../components/Card/Card.jsx";
 
-import bannerHome from "../../assets/banner-home.png";
+import bannerHome from "../../assets/banner-home.webp";
 import logements from "../../data/logements.json";
 
 import "./Home.scss";
@@ -12,6 +12,7 @@ function Home() {
       <Banner
         image={bannerHome}
         title="Chez vous, partout et ailleurs"
+        alt="image de montagne"
       />
 
       <section className="home__gallery">

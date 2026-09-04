@@ -1,7 +1,7 @@
 import Banner from "../../components/Banner/Banner.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
 
-import bannerAbout from "../../assets/banner-about.png";
+import bannerAbout from "../../assets/banner-about.webp";
 
 import "./About.scss";
 
@@ -10,6 +10,7 @@ function About() {
     <>
       <Banner image={bannerAbout} 
       overlayOpacity={0.3}
+      alt="image de montagne"
       />
 
       <section className="about__collapses">

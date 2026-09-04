@@ -11,6 +11,7 @@ function Card({ id, title, cover }) {
         className="card__image"
         src={cover}
         alt={title}
+        loading="lazy"
       />
 
       <h2 className="card__title">
