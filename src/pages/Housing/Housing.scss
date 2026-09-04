@@ -1,0 +1,179 @@
+.housing {
+  &__summary {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__main-info {
+    flex: 1;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 143%;
+
+    color: #ff6060;
+  }
+
+  &__location {
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 143%;
+
+    color: #000000;
+  }
+
+   &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin-top: 20px;
+  }
+
+  &__tag {
+    width: 115px;
+    height: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border-radius: 10px;
+
+    background-color: #ff6060;
+    color: #ffffff;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 143%;
+
+    text-align: center;
+  }
+
+  &__aside {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__host-name {
+    width: 93px;
+
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 143%;
+
+    color: #ff6060;
+    text-align: right;
+  }
+
+  &__host-picture {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+&__rating {
+    display: flex;
+    align-items: center;
+  }
+
+  &__star {
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    line-height: 1;
+
+    color: #e3e3e3;
+
+    &--active {
+      color: #ff6060;
+    }
+  }
+
+ &__details {
+    width: 100%;
+
+    display: flex;
+    gap: 76px;
+
+    margin-top: 24px;
+    margin-bottom: 50px;
+
+    .collapse {
+      width: 582px;
+      flex: 0 0 582px;
+    }
+
+     .collapse__header {
+    height: 52px;
+    border-radius: 5px;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 143%;
+    color: #ffffff;
+  }
+  }
+
+  &__equipments {
+    margin: 0;
+    padding: 20px;
+
+    list-style: none;
+  }
+
+  .housing__details {
+  .collapse__content {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 143%;
+    color: #ff6060;
+  }
+
+  .housing__equipments {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 143%;
+    color: #ff6060;
+  }
+}
+}
