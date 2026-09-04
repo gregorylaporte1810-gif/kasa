@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 
 import Slideshow from "../../components/Slideshow/Slideshow.jsx";
 import Collapse from "../../components/Collapse/Collapse.jsx";
@@ -10,15 +10,12 @@ import "./Housing.scss";
 function Housing() {
   const { id } = useParams();
 
-  const logement = logements.find(
-    (logement) => logement.id === id
-  );
-
-  // On gérera ce cas correctement à l'étape 9.
-  if (!logement) {
-    return null;
-  }
-
+const logement = logements.find(
+  (logement) => logement.id === id
+);
+if (!logement) {
+  return <Navigate to="/404" replace />;
+}
   const rating = Number(logement.rating);
 
   return (
