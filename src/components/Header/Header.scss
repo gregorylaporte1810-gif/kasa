@@ -51,6 +51,27 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    width: 100%;
+    max-width: none;
+    padding: 30px 40px 35px;
+
+    &__logo {
+      width: 180px;
+      height: auto;
+    }
+
+    &__nav {
+      gap: 35px;
+    }
+
+    &__link {
+      font-size: 18px;
+    }
+  }
+}
+
 /* =========================
    MOBILE
    ========================= */

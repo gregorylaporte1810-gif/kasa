@@ -67,6 +67,26 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .slideshow {
+    height: 350px;
+    border-radius: 20px;
+
+    &__arrow {
+      width: 35px;
+      height: 60px;
+    }
+
+    &__arrow--left {
+      left: 15px;
+    }
+
+    &__arrow--right {
+      right: 15px;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .slideshow {
     height: 255px;
