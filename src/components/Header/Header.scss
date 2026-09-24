@@ -1,22 +1,17 @@
 .header {
-  width: calc(100% - 200px);
-  max-width: 1240px;
-
+  width: min(calc(100% - clamp(40px, 7.8125vw, 80px)), 1240px);
   margin: 0 auto;
-  padding: 45px 0 50px;
+  padding: clamp(25px, 3.125vw, 45px) 0 clamp(30px, 3.47vw, 50px);
 
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  box-sizing: border-box;
+  gap: clamp(16px, 2vw, 28px);
 
   &__logo {
     display: block;
-
-    width: 210px;
-    height: 68px;
-
+    width: clamp(160px, 14.58vw, 210px);
+    height: auto;
     object-fit: contain;
     flex-shrink: 0;
   }
@@ -24,17 +19,18 @@
   &__nav {
     display: flex;
     align-items: center;
-    gap: 57px;
+    gap: clamp(20px, 3.96vw, 57px);
+    flex-shrink: 0;
   }
 
   &__link {
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: clamp(14px, 1.67vw, 24px);
     font-weight: 500;
     line-height: 143%;
-
     color: #000000;
     text-decoration: none;
+    white-space: nowrap;
 
     &:visited {
       color: #000000;
@@ -51,60 +47,40 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 599px) {
   .header {
-    width: 100%;
-    max-width: none;
-    padding: 30px 40px 35px;
-
-    &__logo {
-      width: 180px;
-      height: auto;
-    }
-
-    &__nav {
-      gap: 35px;
-    }
-
-    &__link {
-      font-size: 18px;
-    }
-  }
-}
-
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 767px) {
-  .header {
-    width: 100%;
-    max-width: none;
-
-    margin: 0;
-    padding: 20px;
+    padding: 20px 0 27px;
+    gap: 12px;
 
     &__logo {
       width: 145px;
       height: 46.88px;
-
-      flex-shrink: 0;
     }
 
     &__nav {
-      gap: 20px;
-      white-space: nowrap;
+      gap: clamp(12px, 5vw, 20px);
     }
 
     &__link {
       font-size: 12px;
-      font-weight: 500;
-
       text-transform: uppercase;
 
       &[aria-current="page"] {
         text-underline-offset: 2px;
       }
+    }
+  }
+}
+
+@media (max-width: 340px) {
+  .header {
+    &__logo {
+      width: 132px;
+      height: auto;
+    }
+
+    &__link {
+      font-size: 11px;
     }
   }
 }

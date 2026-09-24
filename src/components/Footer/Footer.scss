@@ -8,25 +8,22 @@
   justify-content: center;
 
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
 
   background-color: #000000;
   color: #ffffff;
 
-  box-sizing: border-box;
-
   &__logo {
     width: 122px;
     height: auto;
-
     display: block;
   }
 
   &__copyright {
-    margin: 28px 0 0;
+    margin: clamp(20px, 1.95vw, 28px) 0 0;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 1.67vw, 24px);
     font-weight: 500;
     line-height: 143%;
 
@@ -35,49 +32,12 @@
   }
 }
 
-/* =========================
-   MOBILE
-   ========================= */
-
-@media (max-width: 767px) {
+@media (max-width: 599px) {
   .footer {
-    width: 100%;
-    min-width: 0;
-    height: 209px;
-
-    margin: 0;
-    padding: 0;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: #000000;
-
-    box-sizing: border-box;
-    overflow: hidden;
-
-    &__logo {
-      width: 122px;
-      height: auto;
-
-      display: block;
-    }
-
     &__copyright {
       width: 134px;
-
-      margin: 10px 0 0;
-
-      font-family: "Montserrat", sans-serif;
+      margin-top: 10px;
       font-size: 12px;
-      font-weight: 500;
-      line-height: 143%;
-
-      color: #ffffff;
-      text-align: center;
-
       white-space: normal;
     }
   }

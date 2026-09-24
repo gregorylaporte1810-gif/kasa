@@ -4,11 +4,9 @@
   flex-direction: column;
 
   &__content {
-    width: 100%;
-    max-width: 1240px;
-
-    margin: 50px auto;
-
+    width: min(calc(100% - clamp(40px, 7.8125vw, 80px)), 1240px);
+    min-width: 0;
+    margin: 0 auto 50px;
     flex: 1;
   }
 }

@@ -1,8 +1,10 @@
 .collapse {
   width: 100%;
+  min-width: 0;
 
   &__header {
     width: 100%;
+    min-height: clamp(44px, 3.61vw, 52px);
     padding: 10px 20px 10px 15px;
 
     border: none;
@@ -11,18 +13,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 16px;
 
     background-color: #ff6060;
     color: #ffffff;
-
     cursor: pointer;
   }
 
   &__title {
     flex: 1;
+    min-width: 0;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 24px;
+    font-size: clamp(18px, 1.67vw, 24px);
     font-weight: 700;
     line-height: 143%;
 
@@ -31,20 +34,16 @@
   }
 
   &__arrow {
-    width: 24px;
-    height: 13.71px;
-
+    width: clamp(20px, 1.67vw, 24px);
+    height: auto;
     flex-shrink: 0;
-
     transition: transform 0.3s ease;
   }
 
   &__content {
     display: grid;
     grid-template-rows: 0fr;
-
     overflow: hidden;
-
     transition: grid-template-rows 0.3s ease;
   }
 
@@ -52,10 +51,9 @@
     min-height: 0;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: clamp(16px, 1.25vw, 18px);
     font-weight: 400;
     line-height: 143%;
-
     color: #ff6060;
 
     p {
@@ -71,6 +69,32 @@
 
     .collapse__content {
       grid-template-rows: 1fr;
+    }
+  }
+}
+
+@media (max-width: 599px) {
+  .collapse {
+    &__header {
+      min-height: 30px;
+      padding: 0 10px;
+      gap: 10px;
+    }
+
+    &__title {
+      font-size: 13px;
+    }
+
+    &__arrow {
+      width: 16px;
+    }
+
+    &__content-inner {
+      font-size: 12px;
+
+      p {
+        padding: 15px 10px;
+      }
     }
   }
 }

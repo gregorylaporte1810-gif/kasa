@@ -1,53 +1,56 @@
 .error-page {
+  width: 100%;
+  min-width: 0;
+  padding: clamp(30px, 5.5vw, 80px) 0 clamp(60px, 9vw, 130px);
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 139px;
+  gap: clamp(80px, 18vw, 139px);
 
   text-align: center;
 
   &__code {
-    width: 597px;
-    height: 263px;
-
     margin: 0;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
     font-family: "Montserrat", sans-serif;
-    font-size: 288px;
+    font-size: clamp(96px, 20vw, 288px);
     font-weight: 700;
-    line-height: 143%;
-
+    line-height: 1;
     color: #ff6060;
   }
 
   &__message {
-    width: 872px;
-    height: 51px;
-
+    width: min(100%, 872px);
     margin: 0;
+    padding: 0 10px;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 36px;
+    font-size: clamp(18px, 2.5vw, 36px);
     font-weight: 500;
     line-height: 143%;
-
     color: #ff6060;
   }
 
   &__link {
-    width: 284px;
-    height: 26px;
+    width: auto;
 
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: clamp(14px, 1.25vw, 18px);
     font-weight: 500;
     line-height: 143%;
-
     color: #000000;
     text-decoration: underline;
+  }
+}
+
+@media (max-width: 599px) {
+  .error-page {
+    padding-top: 60px;
+    padding-bottom: 70px;
+
+    &__message {
+      max-width: 280px;
+    }
   }
 }
