@@ -1,16 +1,54 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Kasa — Application React
 
-Currently, two official plugins are available:
+Kasa est un projet de plateforme de location de logements, développé avec React dans le cadre de mon apprentissage du développement web.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies utilisées
 
-## React Compiler
+- React
+- JavaScript
+- Sass
+- Vite
+- React Router
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Objectif du projet
 
-## Expanding the ESLint configuration
+Développer une interface web de location de logements en utilisant React, avec une organisation du code en composants réutilisables et une navigation entre les pages.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+Cloner le dépôt :
+
+```bash
+git clone https://github.com/gregorylaporte1810-gif/kasa.git
+cd kasa
+```
+
+Installer les dépendances :
+
+```bash
+npm install
+```
+
+Démarrer le projet :
+
+```bash
+npm run dev
+```
+
+## Scripts disponibles
+
+- `npm run dev` : lancer le serveur local
+- `npm run build` : préparer la version de production
+- `npm run preview` : prévisualiser la version de production
+- `npm run lint` : vérifier le code avec ESLint
+
+## Portfolio
+
+Retrouvez ce projet et mes autres réalisations sur mon portfolio :
+
+[Grégory.dev](https://gregory-dev-portfolio.netlify.app/)
+
+## Auteur
+
+Projet réalisé par Grégory dans le cadre de sa formation en développement web.
